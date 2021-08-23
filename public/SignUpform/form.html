@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+
+  <!-- ==========START OF CODE===========--->
+  <div class="container">
+    <h1 class="brand"><span><img src="../images/green-restaurant-certified-logo-vector-svg.svg" width="300px" ></span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Green Restaurant</h3>
+        <ul>
+          <!-- <li><i class="fa fa-road"></i> 44 Something st</li> -->
+          <li><i class="fa fa-phone"></i> 0323092749037</li>
+          <li><i class="fa fa-envelope"></i> www.greenres.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>SignUp</h3>
+        <div class="alert">Your information has been sent successfully!</div>
+        <form id="contactForm">
+          <p>
+            <label>User Name</label>
+            <input type="text" name="Username" id="Username" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required></input>
+          </p>
+          <p>
+            <label>Country</label>
+            <input type="text" name="country" id="country" required></input>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="number" name="phone" id="phone" required></input>
+          </p>
+          <p class="full">
+            <label>Password</label>
+            <input type="Password" rows="5" id="password" name="password" required></input>
+          </p>
+          <p class="full">
+            <button type="submit">SignUp/LogIN</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCt9h21QxUbkPAXJOqDdVmvoK_heCNrNM0",
+    authDomain: "loginpage004.firebaseapp.com",
+    databaseURL: "https://loginpage004-default-rtdb.firebaseio.com",
+    projectId: "loginpage004",
+    storageBucket: "loginpage004.appspot.com",
+    messagingSenderId: "157331317407",
+    appId: "1:157331317407:web:4a6bdcb1e80a9adde678aa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+<!-- ==========END OF CODE===========--->
